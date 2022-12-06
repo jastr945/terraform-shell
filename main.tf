@@ -8,7 +8,7 @@ resource "local_file" "setenvvars" {
   filename = "./scripts/setenv.sh"
   content  = <<-EOT
     #!/bin/bash
-    export OUTPUT='Hello ${var.random_input}'
+    export OUTPUT='Hello user ${var.random_input}'
     echo $OUTPUT
   EOT
 }
